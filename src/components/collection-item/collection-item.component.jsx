@@ -13,9 +13,7 @@ const CollectionItem = ({ item, addItem }) => {
     <div className='collection-item'>
       <div 
         className='image'
-        style={{
-          backgroundImage: `url(${imageUrl})`
-        }}
+        style={{ backgroundImage: `url(${imageUrl})` }}
       />
       <div className='collection-footer'>
         <span className='name'>{name}</span>
@@ -34,10 +32,7 @@ const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item))
 })
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(CollectionItem);
+export default connect(null, mapDispatchToProps)(CollectionItem);
 
 
 

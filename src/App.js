@@ -70,7 +70,7 @@ class App extends React.Component {
         </Switch>
         <div className='winter-beautiful'>
           <Logo />
-          <a href='http://www.google.ca' target='_blank' rel='noopener noreferrer'>
+          <a href='https://css-tricks.com/using-svg/' target='_blank' rel='noopener noreferrer'>
             Winter is beautiful. <br />
             Regular anchor tags work great.
           </a>
