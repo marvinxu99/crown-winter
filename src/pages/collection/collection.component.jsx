@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+//import { Redirect } from 'react-router-dom';
 //import { createStructuredSelector } from 'reselect';
 
 import { selectCollection } from '../../redux/shop/shop.selectors';
@@ -10,10 +10,10 @@ import './collection.styles.scss';
 const CollectionPage = ({ collection }) => {
   //console.log(match.params);
   
-  if(!collection) {
-    //console.log('need re-direct');
-    return(<Redirect to='/shop' />);
-  }
+  //if(!collection) {
+  //console.log('need re-direct');
+  //  return(<Redirect to='/shop' />);
+  //}
 
   const { title, items } = collection;
   return(

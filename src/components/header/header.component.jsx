@@ -26,6 +26,9 @@ const Header = ({ currentUser, hidden }) => (
     </LogoContainer>
 
     <OptionsContainer>
+        <OptionLink to='/admin'>
+          ADMIN
+        </OptionLink>
         <OptionLink to='/'>
           HOME
         </OptionLink>
