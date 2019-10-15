@@ -15,7 +15,12 @@ a {
 .winter-beautiful {
     padding: 5px 5px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
+    background: url('./assets/images/winter-resized.svg');
+    background-size: 100px 82px;
+    background-repeat: no-repeat;
 }
 
 * {
