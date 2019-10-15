@@ -1,11 +1,23 @@
 import React from 'react';
 
-import {} from './admin-page.styles';
+import {
+    AdminPageContainer, 
+    AdminPageWarning, 
+    WinterImageContainer, 
+    WinterImageSmall} from './admin-page.styles';
+import winter1 from '../../assets/images/winter-winter.jpeg';
 
 const AdminPage = () => (
-  <div>
-    this is the admin page.
-  </div>
+  <AdminPageContainer>
+    <AdminPageWarning>
+      This page is intended for supervisors to perform administrative tasks. <br />
+      USE WITH CAUTION.
+    </AdminPageWarning>
+    <WinterImageContainer>
+      <WinterImageSmall style={{ backgroundImage: `url(${winter1})` }}></WinterImageSmall>
+    </WinterImageContainer>
+
+  </AdminPageContainer>
 );
 
 export default AdminPage;
