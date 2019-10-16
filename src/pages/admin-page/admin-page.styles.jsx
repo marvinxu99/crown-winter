@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import winter1 from '../../assets/images/winter-winter.jpeg';
+//import winter1 from '../../assets/images/winter-winter.jpeg';
 
 export const AdminPageContainer = styled.div`
   display: flex;
@@ -36,3 +36,8 @@ export const WinterImageSmall = styled.div`
     transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   }
 `;
+
+export const LoadShopDataDiv = styled.div`
+  margin-left: 30px 30px;
+`;
+

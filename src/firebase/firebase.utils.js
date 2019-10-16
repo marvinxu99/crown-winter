@@ -50,7 +50,10 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
     batch.set(newDocRef, obj);
   });
 
-  return await batch.commit();
+  await batch
+    .commit()
+    .then(() => console.log('Collections loaded successfully!'))
+    .catch(error => console.log("Error loading data", error));
 };
 
 export const convertCollectionsSnapshotToMap = collections => {
