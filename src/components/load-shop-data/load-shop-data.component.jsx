@@ -20,6 +20,8 @@ class LoadShopData extends React.Component {
       const { shopdata } = this.state;
       const collectionsMap = Object.keys(shopdata).map(key => shopdata[key])
       addCollectionAndDocuments('collections', collectionsMap);
+    } else {
+      alert('Error loading data. Contact system administrator for help.');
     }
   };
 
