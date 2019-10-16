@@ -14,6 +14,7 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import ContactPage from './pages/contact/contact.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import PageNotFound from './pages/page-not-found/page-not-found.component';
+import ReduxFlowPage from './pages/redux-flow/redux-flow.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser} from './redux/user/user.actions';
@@ -58,6 +59,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/admin' component={AdminPage} />
+          <Route exact path='/redux' component={ReduxFlowPage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/checkout' component={CheckoutPage} />
           <Route exact path='/contact' component={ContactPage} />

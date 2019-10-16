@@ -29,6 +29,9 @@ const Header = ({ currentUser, hidden }) => (
         <OptionLink to='/admin'>
           ADMIN
         </OptionLink>
+        <OptionLink to='/redux'>
+          REDUX
+        </OptionLink>
         <OptionLink to='/'>
           HOME
         </OptionLink>

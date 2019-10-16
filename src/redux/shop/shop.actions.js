@@ -6,7 +6,7 @@ import {
 } from '../../firebase/firebase.utils';
 
 export const fetchCollectionsSuccess = collectionMap => ({
-  type: ShopActionTypes.FETCH_COLLECTIONS_START,
+  type: ShopActionTypes.FETCH_COLLECTIONS_SUCCESS,
   payload: collectionMap
 });
 
