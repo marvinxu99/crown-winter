@@ -14,8 +14,8 @@ import LoadShopData from '../../components/load-shop-data/load-shop-data.compone
 const AdminPage = () => (
   <AdminPageContainer>
     <AdminPageWarning>
-      USE WITH CAUTION. <br />
-      This page is intended for supervisors to perform administrative tasks.
+      This page is intended for supervisors to perform administrative tasks. <br />
+      USE WITH CAUTION.
     </AdminPageWarning>
     <LoadShopDataDiv>
       <LoadShopData />
