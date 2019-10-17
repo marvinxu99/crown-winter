@@ -57,20 +57,17 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={ReduxFlowPage} />
-          <Route exact path='/home' component={HomePage} />
-          <Route exact path='/admin' component={AdminPage} />
-          <Route exact path='/redux' component={ReduxFlowPage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CheckoutPage} />
-          <Route exact path='/contact' component={ContactPage} />
-          <Route 
-            exact path='/signin' 
-            render={ () => currentUser ? 
-              (<Redirect to='/' />) : (<SignInAndSignUpPage />) } 
+          <Route exact path='/' component={ HomePage } />
+          <Route path='/shop' component={ ShopPage }  />
+          <Route exact path='/home' render={ () => <Redirect to='/' /> } />
+          <Route exact path='/admin' component={ AdminPage } />
+          <Route exact path='/redux' component={ ReduxFlowPage } />
+          <Route exact path='/checkout' component={ CheckoutPage } />
+          <Route exact path='/contact' component={ ContactPage } />
+          <Route exact path='/signin' 
+            render={ () => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />) } 
           />
-          <Route 
-            path='/external' 
+          <Route path='/external' 
             component={() => window.location = 'https://external.com/path'}
           />     
           <Route component={PageNotFound} />    
