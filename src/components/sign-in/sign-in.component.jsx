@@ -44,12 +44,12 @@ class SignIn extends React.Component {
         <h2 className='title'>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={ this.handleSubmit }>
           <FormInput 
             name='email' 
             type='email' 
-            value={this.state.email}
-            handleChange={this.handleChange} 
+            value={ this.state.email }
+            handleChange={ this.handleChange } 
             required
             label='Email' 
           />
@@ -57,14 +57,14 @@ class SignIn extends React.Component {
           <FormInput 
             name='password' 
             type='password' 
-            value={this.state.password} 
-            handleChange={this.handleChange}
+            value={ this.state.password } 
+            handleChange={ this.handleChange }
             required
             label='Password' 
           />
           { /* Display error message */
             this.state.errorMessage ?
-            <div className='error'>{this.state.errorMessage}</div>
+            <div className='error'>{ this.state.errorMessage }</div>
             :
             null
           }

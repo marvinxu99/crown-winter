@@ -57,7 +57,8 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={HomePage} />
+          <Route exact path='/' component={ReduxFlowPage} />
+          <Route exact path='/home' component={HomePage} />
           <Route exact path='/admin' component={AdminPage} />
           <Route exact path='/redux' component={ReduxFlowPage} />
           <Route path='/shop' component={ShopPage} />

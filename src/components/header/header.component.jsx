@@ -32,7 +32,7 @@ const Header = ({ currentUser, hidden }) => (
         <OptionLink to='/redux'>
           REDUX
         </OptionLink>
-        <OptionLink to='/'>
+        <OptionLink to='/home'>
           HOME
         </OptionLink>
         <OptionLink to='/shop'>
